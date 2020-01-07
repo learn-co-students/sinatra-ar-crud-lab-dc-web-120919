@@ -1,0 +1,17 @@
+# That view should use ERB to iterate over `@articles` and render them on the page.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+    <h1>Articles Index</h1>
+    <ul>
+        <% @articles.each do |article| %>
+             <li><%= article.title %> </li>
+        <% end %>
+    </ul>
+</body>
+</html>
