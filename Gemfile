@@ -10,6 +10,7 @@ gem 'rspec'
 gem 'rack-test'
 gem 'database_cleaner', '~> 1.6.0'
 gem 'require_all'
+gem 'byebug'
 
 
 group :development do
@@ -18,3 +19,6 @@ group :development do
   gem 'sqlite3', '~> 1.3.6'
   gem "shotgun"
 end
+
+# rake db:migrate SINATRA_ENV=test
+# rake db:migrate SINATRA_ENV=development
